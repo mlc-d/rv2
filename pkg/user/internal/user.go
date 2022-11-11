@@ -3,12 +3,12 @@ package internal
 import "time"
 
 type User struct {
-	id        *uint8
+	id        *int64
 	name      string
 	deletedAt time.Time
 }
 
-func (u *User) GetID() *uint8 {
+func (u *User) GetID() *int64 {
 	return u.id
 }
 
